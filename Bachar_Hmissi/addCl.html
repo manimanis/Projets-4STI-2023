@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cont">
+    <fieldset>
+      <legend>Ajout Client</legend>
+      <form action="addCl.php" method="post">
+        <div class="in">
+          <label for="np">Nom & prénom</label>
+          <input type="text" name="np" id="np" required>
+        </div>
+        <div class="in">
+          <label for="g">Genre</label>
+          <input type="radio" name="g" id="g1" value="M"><label for="g1">Masculin</label> <input type="radio" name="g"
+            id="g2" value="F"><label for="g2">Féminin</label>
+        </div>
+        <div class="in">
+          <label for="dob">Date de naissance</label>
+          <input type="date" name="dob" id="dob">
+        </div>
+        <div class="in">
+          <label for="tel">N° de téléphone</label>
+          <input type="text" name="tel" id="tel">
+        </div>
+        <div class="in">
+          <label for="adr">Adresse</label>
+          <input type="text" name="adr" id="adr">
+        </div>
+        <button type="submit">Ajouter</button>
+        <button type="reset">Annuler</button>
+      </form>
+    </fieldset>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
