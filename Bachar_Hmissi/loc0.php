@@ -1,3 +1,10 @@
+<?php
+$id = intval($_GET["idl"]);
+$conn = mysqli_connect("127.0.0.1", "root", "", "loc_proj");
+$sql = "SELECT * FROM produit WHERE IdProd=$id;";
+$res = mysqli_query($conn, $sql);
+$tab = mysqli_fetch_array($res);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +22,11 @@
       <form action="loc.php" method="post">
         <div class="in">
           <label for="prod">Produit</label>
-          <input type="text" name="prod" id="prod">
+          <input type="text" name="prod" id="prod" value="<?= $tab["Libelle"] ?>" readonly>
         </div>
         <div class="in">
-          <label for="cl">Nom & Prénom</label>
-          <input type="text" name="cl" id="cl">
+          <label for="cl">N° de téléphone </label>
+          <input type="text" name="tel" id="tel">
         </div>
         <button type="submit">Affecter</button>
         <button type="reset">Annuler</button>

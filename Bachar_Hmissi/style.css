@@ -1,7 +1,7 @@
 * {
-  text-align: center;
-  color: rgba(0, 0, 0, 0.537);
-  background-color: aliceblue;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.537);
+    background-color: aliceblue;
 }
 
 fieldset,
@@ -16,76 +16,76 @@ button,
 legend,
 iframe,
 section {
-  background-color: antiquewhite;
+    background-color: antiquewhite;
 }
 
 header {
-  font-size: large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
-  margin-top: 60px;
-  width: 300px;
-  height: 100%;
-  background-color: rgba(153, 143, 131, 0.575);
+    margin-top: 60px;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(153, 143, 131, 0.575);
 }
 
 nav a {
-  display: flex;
-  width: 300px;
-  height: 100%;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 20px;
-  background-color: rgba(189, 178, 164, 0.324);
+    display: flex;
+    width: 300px;
+    height: 100%;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgba(189, 178, 164, 0.324);
 }
 
 section {
-  margin-top: -150px;
-  width: 100%;
-  margin-bottom: 100px;
-  margin-left: 80px;
-  height: 410px;
+    margin-top: -150px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    height: 410px;
 
 }
 
 iframe {
-  width: 50%;
-  height: 100%;
+    width: 50%;
+    height: 100%;
 }
 
 .cont,
 fieldset {
-  height: 375px;
+    height: 375px;
 }
 
 #loc fieldset {
-  height: 450px;
+    height: 450px;
 }
 
 .in {
-  margin: 25px 25px 25px 0;
-  text-align: left;
+    margin: 25px 25px 25px 0;
+    text-align: left;
 }
 
 .in input {
-  width: 100%;
+    width: 100%;
 }
 
 #g1,
 #g2 {
-  width: 20px;
+    width: 20px;
 }
 
 #area {
-  margin-top: -20px;
+    margin-top: -20px;
 }
 
 footer {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 button {
-  margin-right: 50px;
+    margin-right: 50px;
 }
