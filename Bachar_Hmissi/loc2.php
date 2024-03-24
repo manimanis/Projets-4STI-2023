@@ -1,7 +1,7 @@
 <?php
 $idp=intval($_POST["idp"]);
 $idc=intval($_POST["idc"]);
-$date=date("Y-m-i");
+$date=date("Y-m-d");
 $qte=intval($_POST["qte"]);
 $dur=floatval($_POST["duree"]);
 $conn=mysqli_connect("127.0.0.1","root","","loc_proj");
