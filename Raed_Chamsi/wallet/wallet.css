@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.balance {
+    position: relative;
+    text-align: center; 
+}
+
+.balance img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: gray;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text h2 {
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+
+.text p {
+    font-size: 40px;
+    color: gold;
+    margin: 0; 
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
