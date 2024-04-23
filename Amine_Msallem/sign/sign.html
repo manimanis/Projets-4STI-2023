@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello There</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <div id="container">
+    <div class="right">
+        <h1>Welcome <br>
+            To <br>
+            My <br>
+            Project <br>
+        </h1>
+    </div>
+    <div id="left">
+    <p>Create your account</p>
+    <form action="sign.php" method="post" onsubmit="return verif()">
+        <label>Full Name*
+            <input type="text" name="fn" id="fn" required>
+        </label>
+        <label>Your ID*
+            <input type="text" name="id" id="id" required>
+        </label>
+        <label>Classe
+        <select name="classe" id="classe">
+            <option value="0">Select your section</option>
+            <option value="Science Informatique">Science Informatique</option>
+            <option value="Math">Math</option>
+            <option value="Science Technique">Science Technique</option>
+            <option value="Science Expérimentale">Science Expérimentale </option>
+            <option value="Economie Gestion">Economie Gestion</option>
+            <option value="Lettres">Lettres</option>
+        </select>
+        </label>
+        <label>Email
+            <input type="email" name="mail" id="mail">
+        </label><br>
+        <label>Mobile Number
+            <input type="tel" name="tel" id="tel">
+        </label><br>
+        <label>Password
+            <input type="password" name="pas" id="pas">
+        </label>
+        <input type="password" name="pas1" id="pas1"><br>
+        <p>By signing up you accept the <a href="terms.html">Terms of Service</a> and Privacy Policy</p>
+        <p>Already have an account? <a href="sign_in.html"> Sign In</a></p>
+        <button type="submit">GET STARTED</button>
+    </form>
+</div></div>
+<script src="test.js"></script>
+</body>
+</html>

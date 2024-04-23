@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="stylesheet" href="../all.css">
+</head>
+<body>
+    <form action="" onsubmit="return verif()">
+        <div id="sti">
+            <p>Sciences V.T</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="sc_ctr1" id="sc_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="sc_s" id="sc_s"></label>
+        </div>
+        <div id="Informatique">
+            <p>Informatique</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="inf_ctr1" id="inf_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="inf_s" id="inf_s"></label>
+        </div>
+        <div id="math">
+            <p>Math</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="math_ctr1" id="math_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="math_s" id="math_s"></label>
+        </div>
+        <div id="Phy">
+            <p>Physique</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="phy_ctr1" id="phy_ctr1"></label>
+            <label>Traveaux Pratiques<input type="number" min="0" max="20" name="phy_ctr2" id="phy_ctr2"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="phy_s" id="phy_s"></label>
+        </div>
+        <div id="arb">
+            <p>Arab</p> 
+            <label>Synthèse<input type="number" min="0" max="20" name="arb_s" id="arb_s"></label>
+        </div>
+        <div id="philo">
+            <p>Philo</p> 
+            <label>&nbsp Orale &nbsp<input type="number" min="0" max="20" name="phi_ora" id="phi_ora"></label>
+            <label>Controle 1<input type="number" min="0" max="20" name="phi_ctr1" id="phi_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="phi_s" id="phi_s"></label>
+        </div>
+        <div id="Fr">
+            <p>Francais</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="fr_ctr1" id="fr_ctr1"></label>
+            <label>&nbsp Orale &nbsp<input type="number" min="0" max="20" name="fr_ctr2" id="fr_ctr2"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="fr_s" id="fr_s"></label>
+        </div>
+        <div id="ang">
+            <p>Anglais</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="an_ctr1" id="an_ctr1"></label>
+            <label>&nbsp Orale &nbsp<input type="number" min="0" max="20" name="an_ctr2" id="an_ctr2"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="an_s" id="an_s"></label>
+        </div>
+        <div id="op">
+            <p>Option</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="op_ctr1" id="op_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="op_s" id="op_s"></label>
+        </div>
+        <div id="spr">
+            <p>Sport</p> 
+            <label>Controle 1<input type="number" min="0" max="20" name="s_ctr1" id="s_ctr1"></label>
+            <label>Synthèse<input type="number" min="0" max="20" name="s_s" id="s_s"></label>
+        </div>
+        <button type="submit">Calculate</button>
+    </form>
+    <div id="moy"></div>
+    <script src="Science.js"></script>
+</body>
+</html>

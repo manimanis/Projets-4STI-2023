@@ -1,0 +1,66 @@
+
+body{
+    background-image: url('photo-1607499699372-7bb722dff7e2.jpg');
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    font-size:25px;
+}
+
+form > div {
+    width: 340px;
+    margin: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid  rgb(255, 255, 255);
+}
+
+input[type="number"] {
+    color: white;
+    text-align: center;
+    background-color: rgba(62, 97, 235, 0.218);
+    border: 1px solid rgb(0, 32, 68);
+    border-radius: 10px;
+    padding: 2px;
+    width: 80%;
+}
+button {
+    background-color: rgba(62, 97, 235, 0.458);
+    color: white;
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    font-size: 30px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: transparent;
+}
+#moy{
+    color: white;
+    font-size: 50px;
+}
+
+#liste{
+    text-decoration: none;
+    background-color: rgba(62, 97, 235, 0.458);
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    font-size: 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 30px;
+}
+#liste:hover{
+    background-color: transparent;
+}

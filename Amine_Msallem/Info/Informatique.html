@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="stylesheet" href="../all.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <form action="Liste_note.php" method="post" onsubmit="return verif()">
+         <div>
+             <p>Your ID</p>
+             <label for="id">ID:</label>
+             <input type="text" id="id" name="id">
+         </div>
+        <div id="sti">
+            <p>Sti</p>
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="sti_ctr1" id="sti_ctr1"></label>
+            <label>Controle 2<input type="number" step="any" min="0" max="20" name="sti_ctr2" id="sti_ctr2"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="sti_s" id="sti_s"></label>
+        </div>
+        <div id="prog">
+            <p>Programation</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="prog_ctr1" id="prog_ctr1"></label>
+            <label>Controle 2<input type="number" step="any" min="0" max="20" name="prog_ctr2" id="prog_ctr2"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="prog_s" id="prog_s"></label>
+        </div>
+        <div id="math">
+            <p>Math</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="math_ctr1" id="math_ctr1"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="math_s" id="math_s"></label>
+        </div>
+        <div id="phy">
+            <p>Physique</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="phy_ctr1" id="phy_ctr1"></label>
+            <label> Travaux pratiques <input type="number" step="any" min="0" max="20" name="phy_ctr2" id="phy_ctr2"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="phy_s" id="phy_s"></label>
+        </div>
+        <div id="arab">
+            <p>Arab</p> 
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="arb_s" id="arb_s"></label>
+        </div>
+        <div id="phi">
+            <p>Philo</p> 
+            <label>&nbsp Orale &nbsp<input type="number" step="any" min="0" max="20" name="phi_ora" id="phi_ora"></label>
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="phi_ctr1" id="phi_ctr1"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="phi_s" id="phi_s"></label>
+        </div>
+        <div id="fr">
+            <p>Francais</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="fr_ctr1" id="fr_ctr1"></label>
+            <label>&nbsp Orale &nbsp<input type="number" step="any" min="0" max="20" name="fr_ctr2" id="fr_ctr2"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="fr_s" id="fr_s"></label>
+        </div>
+        <div id="ang">
+            <p>Anglais</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="an_ctr1" id="an_ctr1"></label>
+            <label>&nbsp Orale &nbsp<input type="number" step="any" min="0" max="20" name="an_ctr2" id="an_ctr2"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="an_s" id="an_s"></label>
+        </div>
+        <div id="opt">
+            <p>Option</p> 
+            <label>Controle 1<input type="number" step="any" min="0"max="20" name="op_ctr1" id="op_ctr1"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="op_s" id="op_s"></label>
+        </div>
+        <div id="sport">
+            <p>Sport</p> 
+            <label>Controle 1<input type="number" step="any" min="0" max="20" name="s_ctr1" id="s_ctr1"></label>
+            <label>Synthèse<input type="number" step="any" min="0" max="20" name="s_s" id="s_s"></label>
+        </div>
+        <button type="submit">Calculate</button> 
+        <div id="moy" name="moy" ></div>
+        <a href="note.php" class="button" id="liste">Liste notes</a>
+    </form>
+    
+    <script src="Informatique.js"></script>
+</body>
+</html>

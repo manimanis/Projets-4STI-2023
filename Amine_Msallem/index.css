@@ -1,0 +1,64 @@
+body {
+    background-image: url('photo-1607499699372-7bb722dff7e2.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+#Sign {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#in {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    top: 20px;
+    right: 170px;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#Sign:hover, #in:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-7px);
+}
