@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id='pages'>
+            <img src="g logo.png" id="logo" alt="g store">
+            <span><a href="">Store</a></span>
+            <span><a href="">Profile</a></span>
+            </div>
+    </header>
+    <main>
+        
+        <form id="formulaire" action="register.php" method="post">
+            <h1>CREATE YOUR ACCOUNT</h1>
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username"><br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">PASSWORD</label><br>
+            <input type="password" name="password" id="password"><br>
+            <label for="password">CONFIRM PASSWORD</label><br>
+            <input type="password" name="confirm_password" id="confirm_password"><br>
+            <input type="submit" value="Register" onclick="return register()">
+        </form>
+    </main>
+    <div class="info">
+        <div class="grid-item"><h3>Already have an account?</h3>
+            <a href="login.html">Log in to your account</a></div>
+        <div class="grid-item"><p>It's free and easy. Discover thousands of games to play with millions of new friends.</p></div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
