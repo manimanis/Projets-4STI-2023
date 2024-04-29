@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SAKURA TREE-login</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="proj.css"/>
+  </head>
+  <body>
+    <h1>SAKURA TREE</h1>
+    <img src="img/logo.png" alt="sakura tree" width="210px" height="200px">
+    <p>you must log in first!</p>
+    <h2>login</h2>
+    <form action="login.php" method="post">
+      <label for="user">
+        <p>username</p>
+        <input type="text" name="username" id="user">
+      </label><br>
+      <label for="pw">
+        <p>password</p>
+        <input type="password" name="password" id="password">
+      </label><br>
+      <label for="remember"><input type="checkbox" name="remember" id="remember">Remember me</label><br>
+      <button type="submit" onclick="return verifLog()">login</button><br>
+      <p>new member? <a href ="sign_in.html">sign in</a> now!</p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
