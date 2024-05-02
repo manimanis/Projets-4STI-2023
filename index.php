@@ -17,6 +17,7 @@
 
   $databases = get_databases($conn);
 
+  $op = "";
   if (isset($_GET["op"])) {
     $op = $_GET["op"];
   }
