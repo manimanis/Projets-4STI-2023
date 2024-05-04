@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="pross.php" method="get">
+        <h1>vous pouvez selectionner votre base de processeur</h1>
+        <label class="container">Amd
+            <input type="radio" checked="checked" name="marque" value="amd">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Intel
+            <input type="radio" name="marque" value="intel">
+            <span class="checkmark"></span>
+          </label>
+          <h1>vous pouvez selectionner votre base de socket</h1>
+          <label class="container">AMD AM4
+              <input type="radio" checked="checked" name="socket" value="AMD AM4">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">LGA 1700
+              <input type="radio" name="socket" value="LGA 1700">
+              <span class="checkmark"></span>
+            </label>
+          <label for="modele">Modele
+            <input type="text" name="modele" id="modele" required>
+          </label>
+          <label for="reference">Reference
+            <input type="text" name="reference" id="reference" required>
+          </label>
+          <label for="generation">Generation
+            <input type="number" name="generation" id="generation"min="1">
+          </label>
+          <label for="generation">Frequence
+            <input type="number" name="frequence" id="frequence" step="0.1" min="1">
+          </label>
+          <label for="generation">Coeur
+            <input type="number" name="coeur" id="coeur">
+          </label>
+          <label for="generation">Thread
+            <input type="number" name="thread" id="thread" min="1">
+          </label>
+          <label for="rammax">Ram Max
+            <input type="number" name="rammax" id="rammax"min="1">
+          </label>
+          <label for="rammax">Cache
+            <input type="number" name="cache" id="cache"min="1">
+          </label>
+          <label for="rammax">Prix
+            <input type="number" name="prix" id="prix" required min="1">
+          </label>           
+          <button type="submit">Valider</button>
+    </form>
+    <a href="index.html">Back to hub</a>
+</body>
+</html>
