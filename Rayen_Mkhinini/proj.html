@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher le prix</title>
+    <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+    <h2>Choisissez une voiture :</h2>
+    
+    <form method="post" action="projet.php" onsubmit="return verif()">
+        <label for="cars">Voitures disponibles :</label>
+        <select id="cars" name="cars" onchange="carschanged()">
+            <option value="0">Sélectionner une voiture</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="renault">Renault</option>
+            <option value="ford">Ford</option>
+            <option value="nissan">Nissan</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="kia">Kia</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="dacia">Dacia</option>
+            
+        </select>
+    
+    <br>
+
+    <label for="versions">Versions :</label>
+    <select id="versions" name="versions">
+       
+    </select>
+    <br>
+
+    <label for="carParts">Éléments de la voiture :</label>
+    <select id="carParts" name="carParts">
+        <option value="0">Éléments de la voiture</option>
+        <option value="pare-brise">Pare-brise</option>
+        <option value="avant-gauche">Avant gauche</option>
+            <option value="avant-droite">Avant droite</option>
+            <option value="arriere-gauche">Arrière gauche</option>
+            <option value="arriere-droite">Arrière droite</option>
+            <option value="lunette-arriere">Lunette arrière</option>
+        </select>
+        <br>
+        <label for="quantity">Quantité</label>
+        <input type="text" id="quana" name="quana" ><br><br>
+
+        <input type="submit" >
+    </form>
+   
+    <script src="controle.js"></script>
+    <script>
+        function verif2() {
+            var id = document.getElementById("id").value;
+            var piece = document.getElementById("piece").value; 
+            var car = document.getElementById("cars").value;
+            var version = document.getElementById("versions").value;
+            var carPart = document.getElementById("carParts").value; 
+    
+            if (id === "" || isNaN(id)) {
+                alert("Entrez un identifiant client valide");
+                return false;
+            } else if (car === "0") {
+                alert("Sélectionnez une voiture");
+                return false;
+            } else if (version === "") {
+                alert("Sélectionnez une version");
+                return false;
+            } else if (carPart === "") {
+                alert("Sélectionnez une pièce");
+                return false;
+            } else if (piece === "" || isNaN(piece) || piece <= 0) {
+                alert("Entrez une quantité de pièces valide");
+                return false;
+            }
+            return true; 
+        }
+    </script>
+    
+</body>
+</html>

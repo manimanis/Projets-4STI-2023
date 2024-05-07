@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Commande</title>
+    <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+    <h2>Commander:</h2>
+    
+    <form method="post" action="commander.php" onsubmit="return verif2()">
+        <label for="id">ID CLT :</label>
+        <input type="text" name="id" id="id">
+        <label for="cars">Voitures disponibles :</label>
+        <select id="cars" name="cars" onchange="carschanged()">
+            <option value="0">Sélectionner une voiture</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="renault">Renault</option>
+            <option value="ford">Ford</option>
+            <option value="nissan">Nissan</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="kia">Kia</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="dacia">Dacia</option>
+        </select>
+        <br>
+        <label for="versions">Versions :</label>
+        <select id="versions" name="versions"></select>
+        <br>
+        <label for="carParts">Éléments de la voiture :</label>
+        <select id="carParts" name="carParts">
+            <option value="pare-brise">Pare-brise</option>
+            <option value="avant-gauche">Avant gauche</option>
+            <option value="avant-droite">Avant droite</option>
+            <option value="arriere-gauche">Arrière gauche</option>
+            <option value="arriere-droite">Arrière droite</option>
+            <option value="lunette-arriere">Lunette arrière</option>
+        </select>
+        <br>
+        <label for="piece">Combien de pièces :</label>
+        <input type="number" id="piece" name="piece">
+        <br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function carschanged() {
+            const carVersions = {
+                toyota: ["Corolla", "Camry", "RAV4"],
+                volkswagen: ["Golf", "Passat", "Tiguan"],
+                peugeot: ["208", "3008", "5008"],
+                renault: ["Clio", "Captur", "Megane"],
+                ford: ["Fiesta", "Focus", "Escape"],
+                nissan: ["Micra", "Qashqai", "X-Trail"],
+                hyundai: ["i20", "Tucson", "Santa Fe"],
+                kia: ["Rio", "Sportage", "Sorento"],
+                bmw: ["3 Series", "5 Series", "X3"],
+                "mercedes-benz": ["A-Class", "C-Class", "GLC"],
+                dacia: ["Sandero", "Duster", "Logan"]
+            };
+
+            const cars = document.getElementById("cars").value;
+            const version = document.getElementById("versions");
+
+            version.innerHTML = "";
+
+            const selectedCarVersions = carVersions[cars];
+
+            for (let i = 0; i < selectedCarVersions.length; i++) {
+                const opt = new Option();
+                opt.value = selectedCarVersions[i];
+                opt.text = selectedCarVersions[i];
+                version.options.add(opt);
+            }
+        }
+
+        function verif2() {
+            var idClient = document.getElementById("id").value;
+            var car = document.getElementById("cars").value;
+            var quantity = document.getElementById("piece").value;
+
+            if (!idClient) {
+                alert("Veuillez entrer votre ID client.");
+                return false;
+            } else if (car === "0") {
+                alert("Veuillez sélectionner une voiture.");
+                return false;
+            } else if (!quantity || quantity <= 0) {
+                alert("Veuillez entrer une quantité valide de pièces.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

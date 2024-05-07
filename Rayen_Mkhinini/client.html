@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajout client</title>
+    <link rel="stylesheet" href="projet.css">
+    <script>
+        function verif() {
+            var code = document.getElementById("code").value;
+            var nom = document.getElementById("nom").value;
+            var prenom = document.getElementById("prenom").value;
+            var adr = document.getElementById("adr").value;
+            var tel = document.getElementById("tel").value;
+
+            if (code === "" || nom === "" || prenom === "" || adr === "" || tel === "") {
+                alert("Veuillez remplir tous les champs !");
+                return false;
+            }
+            
+
+            return true; 
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return verif()" action="clt.php" method="post" >
+        <label for="code">Code :</label><br>
+        <input type="text" id="code" name="code"><br>
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom"><br>
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom"><br>
+        <label for="adr">Adresse :</label><br>
+        <input type="text" id="adr" name="adr"><br>
+        <label for="tel">Téléphone :</label><br>
+        <input type="tel" id="tel" name="tel"><br>
+        
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
